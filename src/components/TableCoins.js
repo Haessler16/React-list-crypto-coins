@@ -8,7 +8,6 @@ export const TableCoins = ({ coins = [], search = '' }) => {
       coin.name.toLowerCase().includes(search.toLowerCase()) ||
       coin.symbol.toLowerCase().includes(search.toLowerCase()),
   );
-  console.log(filterdCoins, search);
   return (
     <table className='table table-dark mt-4 table-hover'>
       <thead>
